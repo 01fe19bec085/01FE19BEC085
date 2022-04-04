@@ -1,0 +1,28 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Mar 11, 2022 at 11:00:21 IST
+irun
+	-access +rwc
+	parking_system_tb.v
+irun: *W,FILOD: The file /home/adld15/241/parking_system/cds.lib is out of date, the exec ncvlog will be re-invoked.
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		parking_system_tb
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		              Instances  Unique
+		Modules:              2       2
+		Registers:           13      13
+		Scalar wires:         6       -
+		Vectored wires:       4       -
+		Always blocks:        4       4
+		Initial blocks:       2       2
+		Cont. assignments:    0       2
+		Pseudo assignments:   6       6
+	Writing initial simulation snapshot: worklib.parking_system_tb:v
+Loading snapshot worklib.parking_system_tb:v .................... Done
+ncsim> source /cad_area/install/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+TOOL:	irun(64)	15.20-s051: Exiting on Mar 11, 2022 at 11:00:36 IST  (total: 00:00:15)

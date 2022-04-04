@@ -1,0 +1,88 @@
+*** Message Type: info ***
+When: Fri Mar 11 11:03:24 AM IST 2022
+SimVision started.
+Version: TOOL:  simvision(64)   15.20-s051
+User: adld15
+Host: localhost.localdomain
+Platform: Linux/x86_64/2.6.32-754.18.2.el6.x86_64
+Started: Fri Mar 11 11:03:24 AM IST 2022
+Command: /cad_area/install/INCISIVE152/tools.lnx86/simvision/bin/64bit/simvision.exe -connect dc:localhost.localdomain:33058 -64BIT
+Work Directory: /home/adld15/241/parking_system
+ 
+*** Message Type: info ***
+When: Fri Mar 11 11:03:24 AM IST 2022
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Fri Mar 11 11:03:25 AM IST 2022
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Fri Mar 11 11:03:26 AM IST 2022
+Connect to Simulator
+      Design: worklib.parking_system_tb:v
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:        ncsim(64)       15.20-s051
+        User: adld15
+        Host: localhost.localdomain
+Time Started: Fri Mar 11 11:03:16 AM IST 2022
+  Process ID: 7823
+   Directory: /home/adld15/241/parking_system
+     Command: ncsim -gui -cdslib /home/adld15/241/parking_system/cds.lib -logfile ncsim.log -errormax 15 -status worklib.parking_system_tb:v
+
+ 
+*** Message Type: info ***
+When: Fri Mar 11 11:03:28 AM IST 2022
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Fri Mar 11 11:03:37 AM IST 2022
+Create waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Fri Mar 11 11:43:41 AM IST 2022
+Exit NC-Sim: user
+      Design: worklib.parking_system_tb:v
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:        ncsim(64)       15.20-s051
+        User: adld15
+        Host: localhost.localdomain
+Time Started: Fri Mar 11 11:03:16 AM IST 2022
+  Process ID: 7823
+   Directory: /home/adld15/241/parking_system
+     Command: ncsim -gui -cdslib /home/adld15/241/parking_system/cds.lib -logfile ncsim.log -errormax 15 -status worklib.parking_system_tb:v
+
+ 
+*** Message Type: error ***
+When: Fri Mar 11 11:43:42 AM IST 2022
+NC-Sim Crashed:
+      Design: worklib.parking_system_tb:v
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:        ncsim(64)       15.20-s051
+        User: adld15
+        Host: localhost.localdomain
+Time Started: Fri Mar 11 11:03:16 AM IST 2022
+  Process ID: 7823
+   Directory: /home/adld15/241/parking_system
+     Command: ncsim -gui -cdslib /home/adld15/241/parking_system/cds.lib -logfile ncsim.log -errormax 15 -status worklib.parking_system_tb:v
+      Design: worklib.parking_system_tb:v
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:        ncsim(64)       15.20-s051
+        User: adld15
+        Host: localhost.localdomain
+Time Started: Fri Mar 11 11:03:16 AM IST 2022
+  Process ID: 7823
+   Directory: /home/adld15/241/parking_system
+     Command: ncsim -gui -cdslib /home/adld15/241/parking_system/cds.lib -logfile ncsim.log -errormax 15 -status worklib.parking_system_tb:v
+
+Outstanding STRAP Requests:
+        strap::report enable out
+ 
+*** Message Type: info ***
+When: Fri Mar 11 12:07:01 PM IST 2022
+SimVision Exit.
+ 
