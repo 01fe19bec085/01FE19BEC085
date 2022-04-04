@@ -1,0 +1,41 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Apr 04, 2022 at 17:11:15 IST
+irun
+	-access +rwc
+	half_adder_tb.v
+file: half_adder_tb.v
+	module worklib.half_adder_tb:v
+		errors: 0, warnings: 0
+	module worklib.half_adder:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		half_adder_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.half_adder:v <0x40753b66>
+			streams:   0, words:     0
+		worklib.half_adder_tb:v <0x576150d2>
+			streams:   4, words:  5185
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           2       2
+		Scalar wires:        4       -
+		Initial blocks:      1       1
+		Cont. assignments:   0       2
+		Pseudo assignments:  2       2
+	Writing initial simulation snapshot: worklib.half_adder_tb:v
+Loading snapshot worklib.half_adder_tb:v .................... Done
+ncsim> source /cad_area/install/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+a=0 b=0 sum=0 carry=0
+a=0 b=1 sum=1 carry=0
+a=1 b=0 sum=1 carry=0
+a=1 b=1 sum=0 carry=1
+ncsim: *W,RNQUIE: Simulation is complete.
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Apr 04, 2022 at 17:11:16 IST  (total: 00:00:01)
