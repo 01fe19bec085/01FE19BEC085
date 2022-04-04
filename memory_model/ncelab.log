@@ -1,0 +1,6 @@
+ncelab(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+ram_3 RAM(data_out,data_in,address,write,select);
+                 |
+ncelab: *W,CUVMPW (./ram_3_tb.v,7|17): port sizes differ in port connection (8/1024).
+ncelab: Memory Usage - 49.9M program + 33.4M data = 83.3M total (Peak 88.2M)
+ncelab: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.4s, 12.5% cpu)
