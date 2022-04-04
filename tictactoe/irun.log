@@ -1,0 +1,71 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Apr 04, 2022 at 18:59:09 IST
+irun
+	-access +rwc
+	game_tb.v
+file: game_tb.v
+	module worklib.tb_tic_toe_game:v
+		errors: 0, warnings: 0
+	module worklib.tic_tac_toe_game:v
+		errors: 0, warnings: 0
+	module worklib.position_registers:v
+		errors: 0, warnings: 0
+ 4'd15: temp1 <= 16'b10000000000000001;
+                                     |
+ncvlog: *W,INTOVF (game_tb.v,245|37): bit overflow during conversion from text [2.5(IEEE)] (16 bits).
+	module worklib.position_decoder:v
+		errors: 0, warnings: 1
+	module worklib.winner_detector:v
+		errors: 0, warnings: 0
+	module worklib.winner_detect_3:v
+		errors: 0, warnings: 0
+	module worklib.nospace_detector:v
+		errors: 0, warnings: 0
+	module worklib.illegal_move_detector:v
+		errors: 0, warnings: 0
+	module worklib.fsm_controller:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		tb_tic_toe_game
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.fsm_controller:v <0x08a2440a>
+			streams:   6, words:  3386
+		worklib.illegal_move_detector:v <0x030a17d2>
+			streams:   9, words:  2457
+		worklib.nospace_detector:v <0x0a8f887c>
+			streams:   9, words:  1461
+		worklib.position_decoder:v <0x2c2473a2>
+			streams:   3, words:  2401
+		worklib.position_decoder:v <0x41abf53e>
+			streams:   3, words:  2480
+		worklib.position_registers:v <0x51dbb42a>
+			streams:  10, words:  5468
+		worklib.tb_tic_toe_game:v <0x67b6613f>
+			streams:   8, words:  6440
+		worklib.tic_tac_toe_game:v <0x1f347b2e>
+			streams:   2, words:   405
+		worklib.winner_detect_3:v <0x38ea7429>
+			streams:   4, words:  1184
+		worklib.winner_detector:v <0x2f6de4e4>
+			streams:   1, words:   864
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		               Instances  Unique
+		Modules:              17       9
+		Registers:            21      20
+		Scalar wires:        118       -
+		Expanded wires:       16       1
+		Vectored wires:       16       -
+		Always blocks:        12      11
+		Initial blocks:        2       2
+		Cont. assignments:    53      44
+		Pseudo assignments:    8       8
+	Writing initial simulation snapshot: worklib.tb_tic_toe_game:v
+Loading snapshot worklib.tb_tic_toe_game:v .................... Done
+ncsim> source /cad_area/install/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+TOOL:	irun(64)	15.20-s051: Exiting on Apr 04, 2022 at 18:59:15 IST  (total: 00:00:06)
