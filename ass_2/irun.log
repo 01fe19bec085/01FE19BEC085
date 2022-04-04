@@ -1,0 +1,59 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Mar 26, 2022 at 09:24:18 IST
+irun
+	-access +rwc
+	ass_2_tb.v
+include ../../cds.lib
+|
+irun: *W,DLCPTH (./INCA_libs/irun.lnx8664.15.20.nc/cdsrun.lib,1): cds.lib No such file '/home/adld15/241/ass_2/cds.lib' (cds.lib command ignored).
+include ../../hdl.var
+|
+irun: *W,DLHPTH (./INCA_libs/irun.lnx8664.15.20.nc/hdlrun.var,1): hdl.var invalid path '/home/adld15/241/ass_2/INCA_libs/irun.lnx8664.15.20.nc/../../hdl.var' (hdl.var command ignored).
+file: ass_2_tb.v
+	module worklib.ass_2_tb:v
+		errors: 0, warnings: 0
+	module worklib.ass_2:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		ass_2_tb
+ass_2 MYPIPE (z,rs1,rs2,rd,addr,func,clk1,clk2);
+                              |
+ncelab: *W,CUVMPW (./ass_2_tb.v,7|30): port sizes differ in port connection (8/4).
+ass_2 MYPIPE (z,rs1,rs2,rd,addr,func,clk1,clk2);
+                                   |
+ncelab: *W,CUVMPW (./ass_2_tb.v,7|35): port sizes differ in port connection (4/8).
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.ass_2:v <0x284e994e>
+			streams:  16, words:  9705
+		worklib.ass_2_tb:v <0x798a8fc2>
+			streams:  12, words: 13032
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		              Instances  Unique
+		Modules:              2       2
+		Registers:           20      20
+		Scalar wires:         2       -
+		Vectored wires:       6       -
+		Always blocks:        4       4
+		Initial blocks:       4       4
+		Cont. assignments:    0       1
+		Pseudo assignments:   7       7
+	Writing initial simulation snapshot: worklib.ass_2_tb:v
+Loading snapshot worklib.ass_2_tb:v .................... Done
+ncsim> source /cad_area/install/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+time:   0,F=  x
+mem[125]=53d    x
+mem[126]=53d    x
+mem[127]=53d    x
+mem[128]=53d    x
+mem[129]=53d    x
+mem[130]=53d    x
+Simulation complete via $finish(1) at time 300 NS + 0
+./ass_2_tb.v:37   #300 $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Mar 26, 2022 at 09:24:19 IST  (total: 00:00:01)

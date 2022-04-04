@@ -1,0 +1,17 @@
+s1(24Mar2022:18:12:36):  irun -access +rwc ass_2_tb.v 
+s2(25Mar2022:16:29:22):  irun ass_2_tb.v ass_2.v 
+s3(25Mar2022:16:29:42):  irun -access +rwc ass_2_tb.v 
+s4(25Mar2022:16:49:08):  irun pipe2_test.v pipe_ex2.v 
+s5(25Mar2022:16:49:43):  irun pipe2_test.v 
+s6(25Mar2022:16:49:56):  irun pipe_ex2.v 
+s7(25Mar2022:16:51:01):  irun pipe2_test.v pipe_ex2.v 
+s8(25Mar2022:16:53:10):  irun pipe2_test.v pipe_ex2.v 
+s9(25Mar2022:16:54:55):  irun -access +rwc ass_2_tb.v 
+s10(25Mar2022:16:55:16):  irun pipe2_test.v 
+s11(25Mar2022:16:58:52):  irun pipe2_test.v 
+s12(25Mar2022:17:00:38):  irun pipe2_test.v 
+s13(25Mar2022:17:01:01):  irun pipe2_test.v 
+s14(26Mar2022:09:04:44):  irun -access +rwc ass_2_tb.v 
+s15(26Mar2022:09:14:52):  irun -access +rwc ass_2_tb.v 
+s16(26Mar2022:09:23:03):  irun -access +rwc ass_2_tb.v 
+s17(26Mar2022:09:24:18):  irun -access +rwc ass_2_tb.v 
