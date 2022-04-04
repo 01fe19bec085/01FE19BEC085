@@ -1,0 +1,69 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Apr 04, 2022 at 16:35:21 IST
+irun
+	-access +rwc
+	MUL_test.v
+	MUL.v
+file: MUL_test.v
+	module worklib.testbench:v
+		errors: 0, warnings: 0
+file: MUL.v
+	module worklib.MUL_datapath:v
+		errors: 0, warnings: 0
+	module worklib.PIPO1:v
+		errors: 0, warnings: 0
+	module worklib.PIPO2:v
+		errors: 0, warnings: 0
+	module worklib.ADD:v
+		errors: 0, warnings: 0
+	module worklib.EQZ:v
+		errors: 0, warnings: 0
+	module worklib.CNTR:v
+		errors: 0, warnings: 0
+	module worklib.controller:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		testbench
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.ADD:v <0x3c336fa7>
+			streams:   1, words:   243
+		worklib.CNTR:v <0x1bf6bc38>
+			streams:   2, words:   641
+		worklib.EQZ:v <0x2fb7ef35>
+			streams:   1, words:   160
+		worklib.PIPO1:v <0x0ecb522e>
+			streams:   2, words:   432
+		worklib.PIPO2:v <0x4cdde54f>
+			streams:   2, words:   586
+		worklib.controller:v <0x66909813>
+			streams:   3, words:  4191
+		worklib.testbench:v <0x757ddc4e>
+			streams:   8, words:  5359
+	Building instance specific data structures.
+PIPO2 P(Y,Z,ClrP,LdP,clk);
+               |
+ncelab: *W,CSINFI (./MUL.v,7|15): implicit wire has no fanin (testbench.DP.ClrP).
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		              Instances  Unique
+		Modules:              8       8
+		Registers:           14      14
+		Scalar wires:        11       -
+		Vectored wires:      11       -
+		Always blocks:        7       7
+		Initial blocks:       3       3
+		Cont. assignments:    1       1
+		Pseudo assignments:   3       3
+	Writing initial simulation snapshot: worklib.testbench:v
+Loading snapshot worklib.testbench:v .................... Done
+ncsim> source /cad_area/install/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+                   0    x x
+                  45    0 x
+Simulation complete via $finish(1) at time 503 NS + 0
+./MUL_test.v:11 #500 $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Apr 04, 2022 at 16:35:23 IST  (total: 00:00:02)

@@ -1,0 +1,6 @@
+ncelab(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+PIPO2 P(Y,Z,ClrP,LdP,clk);
+               |
+ncelab: *W,CSINFI (./MUL.v,7|15): implicit wire has no fanin (MUL_datapath.ClrP).
+ncelab: Memory Usage - 49.9M program + 33.2M data = 83.1M total (Peak 87.1M)
+ncelab: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.3s, 10.5% cpu)

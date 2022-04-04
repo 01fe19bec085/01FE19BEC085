@@ -1,0 +1,21 @@
+ncsim(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm MUL_datapath.Bout MUL_datapath.Bus MUL_datapath.ClrP MUL_datapath.LdA MUL_datapath.LdB MUL_datapath.LdP MUL_datapath.X MUL_datapath.Y MUL_datapath.Z MUL_datapath.clk MUL_datapath.clrP MUL_datapath.data_in MUL_datapath.decB MUL_datapath.eqz
+Created probe 1
+ncsim> run
+ncsim: *W,RNQUIE: Simulation is complete.
+ncsim> run
+ncsim: *W,RNQUIE: Simulation is complete.
+ncsim> run
+ncsim: *W,RNQUIE: Simulation is complete.
+ncsim> run
+ncsim: *W,RNQUIE: Simulation is complete.
+ncsim> ^C
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 180.0M data = 218.6M total (222.2M Peak)
+ncsim: CPU Usage - 0.2s system + 0.2s user = 0.4s total (22.3s, 1.7% cpu)

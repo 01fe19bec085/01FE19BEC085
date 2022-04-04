@@ -1,0 +1,426 @@
+hal(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+hal: Options:   -cdslib /home/adld25/Ass_Mul/INCA_libs/cds.lib -logfile hal.log worklib.MUL_datapath:module.
+hal: Snapshot:  worklib.MUL_datapath:module.
+hal: Workspace: /home/adld25/Ass_Mul.
+hal: Date: Mon Apr 04 16:37:20 IST 2022.
+
+hal: Running on elaborated SNAPSHOT.....
+
+  ==========================================================================
+Performing lint checks 
+
+halcheck(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+visadev(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+if(clr) dout<=16'b0;
+|
+halcheck: *W,BITUNS (./MUL.v,26|0): Not all bits of constant '16'b0' are explicitly specified.
+halcheck: (./MUL.v,26): Constant extended by 15 bits to -> 16'b(000000000000000)0.
+module MUL_datapath(eqz,LdA,LdB,LdP,clrP,decB,data_in,clk);
+|
+halcheck: *W,LCVARN (./MUL.v,1|0): Module name 'MUL_datapath' uses uppercase characters.
+module MUL_datapath(eqz,LdA,LdB,LdP,clrP,decB,data_in,clk);
+|
+halcheck: *W,DIFFMN (./MUL.v,1|0): Module name 'MUL_datapath' differs from file name 'MUL.v'.
+module MUL_datapath(eqz,LdA,LdB,LdP,clrP,decB,data_in,clk);
+|
+halcheck: *N,PRTCNT (./MUL.v,1|0): Module/Entity 'MUL_datapath' contains '8' ports.
+halcheck: (./MUL.v,1): Number of Input ports: 7.
+halcheck: (./MUL.v,1): Number of Output ports: 1.
+PIPO1 A(X,Bus,LdA,clk);
+|
+halcheck: *W,CBYNAM (./MUL.v,6|0): Port connections for instance 'A' of module 'PIPO1' should be made by name rather than by positional ordered list.
+PIPO2 P(Y,Z,ClrP,LdP,clk);
+|
+halcheck: *W,CBYNAM (./MUL.v,7|0): Port connections for instance 'P' of module 'PIPO2' should be made by name rather than by positional ordered list.
+CNTR B(Bout,Bus,LdB,decB,clk);
+|
+halcheck: *W,CBYNAM (./MUL.v,8|0): Port connections for instance 'B' of module 'CNTR' should be made by name rather than by positional ordered list.
+ADD AD(Z,X,Y);
+|
+halcheck: *W,CBYNAM (./MUL.v,9|0): Port connections for instance 'AD' of module 'ADD' should be made by name rather than by positional ordered list.
+EQZ COMP(eqz,Bout);
+|
+halcheck: *W,CBYNAM (./MUL.v,10|0): Port connections for instance 'COMP' of module 'EQZ' should be made by name rather than by positional ordered list.
+input LdA,LdB,LdP,clrP,decB,clk;
+|
+halcheck: *N,DECLIN (./MUL.v,2|0): Use a separate line for each HDL declaration.
+input [15:0] data_in;
+|
+halcheck: *W,STYVAL (./MUL.v,3|0): Numeric value '15' used for identifier 'data_in'. Use constants to avoid portability issues.
+input LdA,LdB,LdP,clrP,decB,clk;
+|
+halcheck: *W,LCVARN (./MUL.v,2|0): Net name 'LdA' uses uppercase characters.
+input LdA,LdB,LdP,clrP,decB,clk;
+|
+halcheck: *W,LCVARN (./MUL.v,2|0): Net name 'LdB' uses uppercase characters.
+input LdA,LdB,LdP,clrP,decB,clk;
+|
+halcheck: *W,LCVARN (./MUL.v,2|0): Net name 'LdP' uses uppercase characters.
+input LdA,LdB,LdP,clrP,decB,clk;
+|
+halcheck: *W,LCVARN (./MUL.v,2|0): Net name 'clrP' uses uppercase characters.
+input LdA,LdB,LdP,clrP,decB,clk;
+|
+halcheck: *W,LCVARN (./MUL.v,2|0): Net name 'decB' uses uppercase characters.
+wire [15:0] X,Y,Z,Bout,Bus;
+|
+halcheck: *W,LCVARN (./MUL.v,5|0): Net name 'X' uses uppercase characters.
+wire [15:0] X,Y,Z,Bout,Bus;
+|
+halcheck: *W,STYVAL (./MUL.v,5|0): Numeric value '15' used for identifier 'X'. Use constants to avoid portability issues.
+wire [15:0] X,Y,Z,Bout,Bus;
+|
+halcheck: *W,LCVARN (./MUL.v,5|0): Net name 'Y' uses uppercase characters.
+wire [15:0] X,Y,Z,Bout,Bus;
+|
+halcheck: *W,LCVARN (./MUL.v,5|0): Net name 'Z' uses uppercase characters.
+wire [15:0] X,Y,Z,Bout,Bus;
+|
+halcheck: *W,LCVARN (./MUL.v,5|0): Net name 'Bout' uses uppercase characters.
+wire [15:0] X,Y,Z,Bout,Bus;
+|
+halcheck: *W,LCVARN (./MUL.v,5|0): Net name 'Bus' uses uppercase characters.
+wire [15:0] X,Y,Z,Bout,Bus;
+|
+halcheck: *W,KEYWOD (./MUL.v,5|0): VHDL reserved word 'Bus' used as an identifier or label.
+PIPO2 P(Y,Z,ClrP,LdP,clk);
+|
+halcheck: *W,IMPNET (./MUL.v,7|0): Net 'ClrP' has an implicit declaration of type 'wire'.
+PIPO2 P(Y,Z,ClrP,LdP,clk);
+|
+halcheck: *W,LCVARN (./MUL.v,7|0): Net name 'ClrP' uses uppercase characters.
+PIPO2 P(Y,Z,ClrP,LdP,clk);
+|
+halcheck: *E,VERCAS (./MUL.v,7|0): Identifier, label, instance, or module name 'ClrP' reused with a case difference.
+halcheck: (./MUL.v,2): Previously used as 'clrP'.
+PIPO1 A(X,Bus,LdA,clk);
+|
+halcheck: *W,LCVARN (./MUL.v,6|0): Module instance name 'A' uses uppercase characters.
+PIPO1 A(X,Bus,LdA,clk);
+|
+halcheck: *N,IDLENG (./MUL.v,6|0): Identifier name 'A' is not of appropriate length (4 to 16 characters).
+module PIPO1(dout,din,ld,clk);
+|
+halcheck: *W,LCVARN (./MUL.v,13|0): Module name 'PIPO1' uses uppercase characters.
+module PIPO1(dout,din,ld,clk);
+|
+halcheck: *W,DIFFMN (./MUL.v,13|0): Module name 'PIPO1' differs from file name 'MUL.v'.
+module PIPO1(dout,din,ld,clk);
+|
+halcheck: *W,MULTMF (./MUL.v,13|0): More than one design-unit definition in file 'MUL.v'.
+module PIPO1(dout,din,ld,clk);
+|
+halcheck: *N,PRTCNT (./MUL.v,13|0): Module/Entity 'PIPO1' contains '4' ports.
+halcheck: (./MUL.v,13): Number of Input ports: 3.
+halcheck: (./MUL.v,13): Number of Output ports: 1.
+input [15:0] din;
+|
+halcheck: *W,STYVAL (./MUL.v,14|0): Numeric value '15' used for identifier 'din'. Use constants to avoid portability issues.
+input ld,clk;
+|
+halcheck: *N,DECLIN (./MUL.v,15|0): Use a separate line for each HDL declaration.
+output reg [15:0] dout;
+|
+halcheck: *W,STYVAL (./MUL.v,16|0): Numeric value '15' used for identifier 'dout'. Use constants to avoid portability issues.
+always @(posedge clk)
+|
+halcheck: *W,NBGEND (./MUL.v,17|0): Missing begin/end statement in the 'always' block.
+if(ld)dout<=din;
+|
+halcheck: *W,NBGEND (./MUL.v,18|0): Missing begin/end statement in the 'if' block.
+if(ld)dout<=din;
+|
+halcheck: *W,SEPLIN (./MUL.v,18|0): Use a separate line for each HDL statement.
+PIPO2 P(Y,Z,ClrP,LdP,clk);
+|
+halcheck: *W,LCVARN (./MUL.v,7|0): Module instance name 'P' uses uppercase characters.
+PIPO2 P(Y,Z,ClrP,LdP,clk);
+|
+halcheck: *N,IDLENG (./MUL.v,7|0): Identifier name 'P' is not of appropriate length (4 to 16 characters).
+module PIPO2(dout,din,ld,clr,clk);
+|
+halcheck: *W,LCVARN (./MUL.v,21|0): Module name 'PIPO2' uses uppercase characters.
+module PIPO2(dout,din,ld,clr,clk);
+|
+halcheck: *W,DIFFMN (./MUL.v,21|0): Module name 'PIPO2' differs from file name 'MUL.v'.
+module PIPO2(dout,din,ld,clr,clk);
+|
+halcheck: *W,MULTMF (./MUL.v,21|0): More than one design-unit definition in file 'MUL.v'.
+module PIPO2(dout,din,ld,clr,clk);
+|
+halcheck: *N,PRTCNT (./MUL.v,21|0): Module/Entity 'PIPO2' contains '5' ports.
+halcheck: (./MUL.v,21): Number of Input ports: 4.
+halcheck: (./MUL.v,21): Number of Output ports: 1.
+input [15:0] din;
+|
+halcheck: *W,STYVAL (./MUL.v,22|0): Numeric value '15' used for identifier 'din'. Use constants to avoid portability issues.
+input ld,clr,clk;
+|
+halcheck: *N,DECLIN (./MUL.v,23|0): Use a separate line for each HDL declaration.
+output reg [15:0] dout;
+|
+halcheck: *W,STYVAL (./MUL.v,24|0): Numeric value '15' used for identifier 'dout'. Use constants to avoid portability issues.
+always @(posedge clk)
+|
+halcheck: *W,NBGEND (./MUL.v,25|0): Missing begin/end statement in the 'always' block.
+if(clr) dout<=16'b0;
+|
+halcheck: *W,NBGEND (./MUL.v,26|0): Missing begin/end statement in the 'if' block.
+if(clr) dout<=16'b0;
+|
+halcheck: *W,SEPLIN (./MUL.v,26|0): Use a separate line for each HDL statement.
+else if(ld) dout<=din;
+|
+halcheck: *W,NBGEND (./MUL.v,27|0): Missing begin/end statement in the 'if' block.
+else if(ld) dout<=din;
+|
+halcheck: *W,SEPLIN (./MUL.v,27|0): Use a separate line for each HDL statement.
+CNTR B(Bout,Bus,LdB,decB,clk);
+|
+halcheck: *W,LCVARN (./MUL.v,8|0): Module instance name 'B' uses uppercase characters.
+CNTR B(Bout,Bus,LdB,decB,clk);
+|
+halcheck: *N,IDLENG (./MUL.v,8|0): Identifier name 'B' is not of appropriate length (4 to 16 characters).
+module CNTR(dout,din,ld,dec,clk);
+|
+halcheck: *W,LCVARN (./MUL.v,43|0): Module name 'CNTR' uses uppercase characters.
+module CNTR(dout,din,ld,dec,clk);
+|
+halcheck: *W,DIFFMN (./MUL.v,43|0): Module name 'CNTR' differs from file name 'MUL.v'.
+module CNTR(dout,din,ld,dec,clk);
+|
+halcheck: *W,MULTMF (./MUL.v,43|0): More than one design-unit definition in file 'MUL.v'.
+module CNTR(dout,din,ld,dec,clk);
+|
+halcheck: *N,PRTCNT (./MUL.v,43|0): Module/Entity 'CNTR' contains '5' ports.
+halcheck: (./MUL.v,43): Number of Input ports: 4.
+halcheck: (./MUL.v,43): Number of Output ports: 1.
+input [15:0] din;
+|
+halcheck: *W,STYVAL (./MUL.v,44|0): Numeric value '15' used for identifier 'din'. Use constants to avoid portability issues.
+input ld,dec,clk;
+|
+halcheck: *N,DECLIN (./MUL.v,45|0): Use a separate line for each HDL declaration.
+output reg [15:0] dout;
+|
+halcheck: *W,STYVAL (./MUL.v,46|0): Numeric value '15' used for identifier 'dout'. Use constants to avoid portability issues.
+always @(posedge clk)
+|
+halcheck: *W,NBGEND (./MUL.v,47|0): Missing begin/end statement in the 'always' block.
+if(ld) dout<=din;
+|
+halcheck: *W,NBGEND (./MUL.v,48|0): Missing begin/end statement in the 'if' block.
+if(ld) dout<=din;
+|
+halcheck: *W,SEPLIN (./MUL.v,48|0): Use a separate line for each HDL statement.
+else if (dec) dout<=dout-1;
+|
+halcheck: *W,NBGEND (./MUL.v,49|0): Missing begin/end statement in the 'if' block.
+else if (dec) dout<=dout-1;
+|
+halcheck: *W,SEPLIN (./MUL.v,49|0): Use a separate line for each HDL statement.
+else if (dec) dout<=dout-1;
+|
+halcheck: *W,IMPTYP (./MUL.v,49|0): Expression 'dout - 1' implicitly converted to type 'register' from type 'integer'.
+else if (dec) dout<=dout-1;
+|
+halcheck: *W,POIASG (./MUL.v,49|0): The result of subtraction operation may lead to a potential overflow in module/design-unit B.
+halcheck: (./MUL.v,49): LHS operand 'dout' is 16 bit(s), RHS operand 'dout - 1' is 32 bit(s).
+halcheck: (./MUL.v,49): Increase the size of LHS by 16 bit(s).
+else if (dec) dout<=dout-1;
+|
+halcheck: *W,LRGOPR (./MUL.v,49|0): Arithmetic or relational operation performed on large operands in module/design-unit B.
+else if (dec) dout<=dout-1;
+|
+halcheck: *W,UELOPR (./MUL.v,49|0): Unequal length operand in bit/arithmetic operator MINUS in module/design-unit B.
+halcheck: (./MUL.v,49): LHS operand 'dout' is 16 bits, RHS operand '1' is 32 bits.
+ADD AD(Z,X,Y);
+|
+halcheck: *W,LCVARN (./MUL.v,9|0): Module instance name 'AD' uses uppercase characters.
+ADD AD(Z,X,Y);
+|
+halcheck: *N,IDLENG (./MUL.v,9|0): Identifier name 'AD' is not of appropriate length (4 to 16 characters).
+module ADD(out,in1,in2);
+|
+halcheck: *N,IDLENG (./MUL.v,30|0): Identifier name 'ADD' is not of appropriate length (4 to 16 characters).
+module ADD(out,in1,in2);
+|
+halcheck: *W,LCVARN (./MUL.v,30|0): Module name 'ADD' uses uppercase characters.
+module ADD(out,in1,in2);
+|
+halcheck: *W,DIFFMN (./MUL.v,30|0): Module name 'ADD' differs from file name 'MUL.v'.
+module ADD(out,in1,in2);
+|
+halcheck: *W,MULTMF (./MUL.v,30|0): More than one design-unit definition in file 'MUL.v'.
+module ADD(out,in1,in2);
+|
+halcheck: *N,PRTCNT (./MUL.v,30|0): Module/Entity 'ADD' contains '3' ports.
+halcheck: (./MUL.v,30): Number of Input ports: 2.
+halcheck: (./MUL.v,30): Number of Output ports: 1.
+input [15:0] in1,in2;
+|
+halcheck: *W,NUMSUF (./MUL.v,31|0): Identifier 'in1' has a numeric value suffix.
+input [15:0] in1,in2;
+|
+halcheck: *W,STYVAL (./MUL.v,31|0): Numeric value '15' used for identifier 'in1'. Use constants to avoid portability issues.
+input [15:0] in1,in2;
+|
+halcheck: *W,NUMSUF (./MUL.v,31|0): Identifier 'in2' has a numeric value suffix.
+input [15:0] in1,in2;
+|
+halcheck: *N,DECLIN (./MUL.v,31|0): Use a separate line for each HDL declaration.
+output reg [15:0] out;
+|
+halcheck: *W,STYVAL (./MUL.v,32|0): Numeric value '15' used for identifier 'out'. Use constants to avoid portability issues.
+output reg [15:0] out;
+|
+halcheck: *W,KEYWOD (./MUL.v,32|0): VHDL reserved word 'out' used as an identifier or label.
+always @(*)
+|
+halcheck: *W,NBGEND (./MUL.v,33|0): Missing begin/end statement in the 'always' block.
+out=in1+in2;
+|
+halcheck: *W,POIASG (./MUL.v,34|0): The result of addition operation may lead to a potential overflow in module/design-unit AD.
+halcheck: (./MUL.v,34): LHS operand 'out' is 16 bit(s), RHS operand 'in1 + in2' is 17 bit(s).
+halcheck: (./MUL.v,34): Increase the size of LHS by 1 bit(s).
+out=in1+in2;
+|
+halcheck: *W,LRGOPR (./MUL.v,34|0): Arithmetic or relational operation performed on large operands in module/design-unit AD.
+EQZ COMP(eqz,Bout);
+|
+halcheck: *W,LCVARN (./MUL.v,10|0): Module instance name 'COMP' uses uppercase characters.
+module EQZ(eqz,data);
+|
+halcheck: *N,IDLENG (./MUL.v,37|0): Identifier name 'EQZ' is not of appropriate length (4 to 16 characters).
+module EQZ(eqz,data);
+|
+halcheck: *W,LCVARN (./MUL.v,37|0): Module name 'EQZ' uses uppercase characters.
+module EQZ(eqz,data);
+|
+halcheck: *W,DIFFMN (./MUL.v,37|0): Module name 'EQZ' differs from file name 'MUL.v'.
+module EQZ(eqz,data);
+|
+halcheck: *W,MULTMF (./MUL.v,37|0): More than one design-unit definition in file 'MUL.v'.
+module EQZ(eqz,data);
+|
+halcheck: *N,PRTCNT (./MUL.v,37|0): Module/Entity 'EQZ' contains '2' ports.
+halcheck: (./MUL.v,37): Number of Input ports: 1.
+halcheck: (./MUL.v,37): Number of Output ports: 1.
+input [15:0] data;
+|
+halcheck: *W,STYVAL (./MUL.v,38|0): Numeric value '15' used for identifier 'data'. Use constants to avoid portability issues.
+output eqz;
+|
+halcheck: *E,VERCAS (./MUL.v,39|0): Identifier, label, instance, or module name 'eqz' reused with a case difference.
+halcheck: (./MUL.v,10): Previously used as 'EQZ'.
+assign eqz=(data==0);
+|
+halcheck: *W,LRGOPR (./MUL.v,40|0): Arithmetic or relational operation performed on large operands in module/design-unit COMP.
+assign eqz=(data==0);
+|
+halcheck: *W,ULCMPE (./MUL.v,40|0): Unequal length operands in equality operator encountered (padding produces incorrect result) in module/design-unit COMP. LHS operand is 16 bits, RHS operand is 32 bits.
+wire [15:0] X,Y,Z,Bout,Bus;
+|
+halcheck: *W,UASWIR (./MUL.v,5|0): Wire 'Bus' defined in module 'MUL_datapath' is unassigned, but drives at least an object.
+PIPO2 P(Y,Z,ClrP,LdP,clk);
+|
+halcheck: *W,UASWIR (./MUL.v,7|0): Wire 'ClrP' defined in module 'MUL_datapath' is unassigned, but drives at least an object.
+input LdA,LdB,LdP,clrP,decB,clk;
+|
+halcheck: *W,USEPRT (./MUL.v,2|0): The input/inout port 'clrP' defined in the module 'MUL_datapath' is unused (neither read nor assigned).
+input [15:0] data_in;
+|
+halcheck: *W,USEPRT (./MUL.v,3|0): The input/inout port 'data_in' defined in the module 'MUL_datapath' is unused (neither read nor assigned).
+halcheck: Total errors   = 2.
+halcheck: Total warnings = 81.
+
+  ==========================================================================
+Performing synthesizability checks 
+
+cfe64: 15.20.051-s(15.20.s051): (c) Copyright 1995 - 2018 Cadence Design Systems, Inc.
+cfe64 Build : Mon May  7 17:15:12 IST 2018 ldvopt246
+halsynth: Loading design snapshot....
+halsynth: Traversing design hierarchy....
+halsynth: Total errors   = 0.
+halsynth: Total warnings = 0.
+
+  ==========================================================================
+Performing structural checks 
+
+halstruct(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+visadev(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+PIPO1 A(X,Bus,LdA,clk);
+|
+halstruct: *E,UNCONI (./MUL.v,6|0): Input port 'din' of entity/module 'PIPO1' is being used inside architecture/module, but not connected (either partially or completely) in its instance 'MUL_datapath.A'.
+halstruct: (./MUL.v,6): 'din[15:0]' mapped to actual expression 'Bus' which is undriven.
+PIPO2 P(Y,Z,ClrP,LdP,clk);
+|
+halstruct: *E,UNCONI (./MUL.v,7|0): Input port 'ld' of entity/module 'PIPO2' is being used inside architecture/module, but not connected (either partially or completely) in its instance 'MUL_datapath.P'.
+halstruct: (./MUL.v,7): 'ld' mapped to actual expression 'ClrP' which is undriven.
+CNTR B(Bout,Bus,LdB,decB,clk);
+|
+halstruct: *E,UNCONI (./MUL.v,8|0): Input port 'din' of entity/module 'CNTR' is being used inside architecture/module, but not connected (either partially or completely) in its instance 'MUL_datapath.B'.
+halstruct: (./MUL.v,8): 'din[15:0]' mapped to actual expression 'Bus' which is undriven.
+if(ld)dout<=din;
+|
+halstruct: *W,FFWNSR (./MUL.v,18|0): Flip-flop 'dout' does not have any set or reset.
+input LdA,LdB,LdP,clrP,decB,clk;
+|
+halstruct: *N,CLKINF (./MUL.v,2|0): Signal 'MUL_datapath.clk' was inferred as clock.
+halstruct: (./MUL.v,2): Clock source is signal 'MUL_datapath.clk'.
+halstruct: (./MUL.v,18): Drives the flip-flop 'MUL_datapath.A.dout'.
+else if(ld) dout<=din;
+|
+halstruct: *W,FFWASR (./MUL.v,27|0): Flip-flop 'dout' does not have any asynchronous set or reset.
+PIPO2 P(Y,Z,ClrP,LdP,clk);
+|
+halstruct: *W,DIFRST (./MUL.v,7|0): Set/Reset 'LdP' is being renamed to 'clr'.
+else if(ld) dout<=din;
+|
+halstruct: *E,CBPAHI (./MUL.v,27|0): Combinatorial path crossing multiple units drives 'MUL_datapath.P.dout'.
+halstruct: (./MUL.v,27): in instance 'MUL_datapath.P', combinatorial function of input 'din' drives 'dout'.
+halstruct: (./MUL.v,7): in instance 'MUL_datapath', 'Z' drives input 'din' of instance 'P'.
+halstruct: (./MUL.v,9): in instance 'MUL_datapath', output 'out' of instance 'AD' drives 'Z'.
+halstruct: (./MUL.v,34): in instance 'MUL_datapath.AD', combinatorial function drives 'out'.
+else if (dec) dout<=dout-1;
+|
+halstruct: *W,FFWNSR (./MUL.v,49|0): Flip-flop 'dout' does not have any set or reset.
+out=in1+in2;
+|
+halstruct: *W,SYNPRT (./MUL.v,34|0): Output port 'out' is assigned asynchronously.
+assign eqz=(data==0);
+|
+halstruct: *W,SYNPRT (./MUL.v,40|0): Output port 'eqz' is assigned asynchronously.
+module MUL_datapath(eqz,LdA,LdB,LdP,clrP,decB,data_in,clk);
+|
+halstruct: *N,NUMDFF (./MUL.v,1|0): Number of single-bit D flip-flops present in the hierarchy is 48.
+halstruct: Design facts generated in 'hal.design_facts'.
+halstruct: Total errors   = 4.
+halstruct: Total warnings = 6.
+
+  ==========================================================================
+
+Analysis summary :
+
+ Errors   : (6)
+  CBPAHI (1)      UNCONI (3)      VERCAS (2)     
+
+ Warnings : (87)
+  BITUNS (1)      CBYNAM (5)      DIFFMN (6)      DIFRST (1)     
+  FFWASR (1)      FFWNSR (2)      IMPNET (1)      IMPTYP (1)     
+  KEYWOD (2)      LCVARN (22)     LRGOPR (3)      MULTMF (5)     
+  NBGEND (9)      NUMSUF (2)      POIASG (2)      SEPLIN (5)     
+  STYVAL (11)     SYNPRT (2)      UASWIR (2)      UELOPR (1)     
+  ULCMPE (1)      USEPRT (2)     
+
+ Notes    : (19)
+  CLKINF (1)      DECLIN (5)      IDLENG (6)      NUMDFF (1)     
+  PRTCNT (6)     
+
+Analysis complete.
+
+ ==========================================================================
+
+To analyze results, run following command :
+    ncbrowse -64bit -cdslib /home/adld25/Ass_Mul/INCA_libs/cds.lib -sortby severity -sortby category -sortby tag hal.log
+
