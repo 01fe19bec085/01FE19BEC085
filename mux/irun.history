@@ -1,0 +1,9 @@
+s1(04Apr2022:16:57:35):  irun -access +rwc mux_gate1_tb.v 
+s2(04Apr2022:17:00:27):  irun -access +rwc mux_gate1_tb.v 
+s3(04Apr2022:17:21:20):  irun -access +rwc mux_gate1_tb.v 
+s4(04Apr2022:17:22:10):  irun -access +rwc mux_gate1_tb.v 
+s5(04Apr2022:17:22:58):  irun -access +rwc mux_gate1_tb.v 
+s6(04Apr2022:17:26:34):  irun -access +rwc mux_gate1_tb.v 
+s7(04Apr2022:17:27:03):  irun -access +rwc mux_gate1_tb.v 
+s8(04Apr2022:17:27:38):  irun -access +rwc mux_gate1_tb.v 
+s9(04Apr2022:17:28:21):  irun -access +rwc mux_gate1_tb.v 

@@ -1,0 +1,20 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Apr 04, 2022 at 17:28:21 IST
+irun
+	-access +rwc
+	mux_gate1_tb.v
+Loading snapshot worklib.mux_gate1_tb:v .................... Done
+ncsim> source /cad_area/install/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+time=0000000000000000000000000000000000000000000000000000000000000000,I0=0,I1=x, S0=0,Y=0
+time=0000000000000000000000000000000000000000000000000000000000000010,I0=1,I1=x, S0=0,Y=1
+time=0000000000000000000000000000000000000000000000000000000000000100,I0=1,I1=x, S0=1,Y=x
+time=0000000000000000000000000000000000000000000000000000000000000110,I0=1,I1=1, S0=1,Y=1
+Simulation stopped via $stop(1) at time 8 NS + 0
+./mux_gate1_tb.v:10 #2 $stop();
+ncsim> nclaunch
+nclaunch(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+ncsim> 
+ncsim: *W,CMUSEX: Control-D in interactive input - one more to exit.
+exit
+TOOL:	irun(64)	15.20-s051: Exiting on Apr 04, 2022 at 17:30:21 IST  (total: 00:02:00)

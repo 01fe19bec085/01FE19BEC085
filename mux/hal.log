@@ -1,0 +1,149 @@
+hal(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+hal: Options:   -cdslib /home/adld15/241/mux/cds.lib -logfile hal.log worklib.mux_gate1_tb:v.
+hal: Snapshot:  worklib.mux_gate1_tb:v.
+hal: Workspace: /home/adld15/241/mux.
+hal: Date: Mon Apr 04 17:29:08 IST 2022.
+
+hal: Running on elaborated SNAPSHOT.....
+
+  ==========================================================================
+Performing lint checks 
+
+halcheck(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+visadev(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+initial begin $monitor("time=%b,I0=%b,I1=%b, S0=%b,Y=%b",$time,I0,I1,S0,Y);
+|
+halcheck: *W,SEPLIN (./mux_gate1_tb.v,13|0): Use a separate line for each HDL statement.
+module mux_gate1_tb();
+|
+halcheck: *W,NEEDIO (./mux_gate1_tb.v,1|0): Top-level module 'mux_gate1_tb' has no inputs/outputs/inouts.
+wire Y;
+|
+halcheck: *W,LCVARN (./mux_gate1_tb.v,3|0): Net name 'Y' uses uppercase characters.
+reg S0,I0,I1;
+|
+halcheck: *W,LCVARN (./mux_gate1_tb.v,2|0): Register name 'S0' uses uppercase characters.
+reg S0,I0,I1;
+|
+halcheck: *W,LCVARN (./mux_gate1_tb.v,2|0): Register name 'I0' uses uppercase characters.
+reg S0,I0,I1;
+|
+halcheck: *W,LCVARN (./mux_gate1_tb.v,2|0): Register name 'I1' uses uppercase characters.
+initial begin
+|
+halcheck: *W,NOBLKN (./mux_gate1_tb.v,5|0): Each block should be labeled with a meaningful name.
+I0=1'b0; I0=1'b0;S0=1'b0;
+|
+halcheck: *W,SEPLIN (./mux_gate1_tb.v,6|0): Use a separate line for each HDL statement.
+#2 $stop();
+|
+halcheck: *W,BADSYS (./mux_gate1_tb.v,10|0): System task $stop in module 'mux_gate1_tb' is ignored.
+initial begin $monitor("time=%b,I0=%b,I1=%b, S0=%b,Y=%b",$time,I0,I1,S0,Y);
+|
+halcheck: *W,NOBLKN (./mux_gate1_tb.v,13|0): Each block should be labeled with a meaningful name.
+initial begin $monitor("time=%b,I0=%b,I1=%b, S0=%b,Y=%b",$time,I0,I1,S0,Y);
+|
+halcheck: *W,BADSYS (./mux_gate1_tb.v,13|0): System task $monitor in module 'mux_gate1_tb' is ignored.
+mux_gate1 DUT(.I0(I0),.I1(I1),.S0(S0),.Y(Y));
+|
+halcheck: *W,LCVARN (./mux_gate1_tb.v,4|0): Module instance name 'DUT' uses uppercase characters.
+mux_gate1 DUT(.I0(I0),.I1(I1),.S0(S0),.Y(Y));
+|
+halcheck: *N,IDLENG (./mux_gate1_tb.v,4|0): Identifier name 'DUT' is not of appropriate length (4 to 16 characters).
+module mux_gate1(S0,I0,I1,Y);
+|
+halcheck: *W,DIFFMN (./mux_gate1_tb.v,18|0): Module name 'mux_gate1' differs from file name 'mux_gate1_tb.v'.
+module mux_gate1(S0,I0,I1,Y);
+|
+halcheck: *W,MULTMF (./mux_gate1_tb.v,18|0): More than one design-unit definition in file 'mux_gate1_tb.v'.
+module mux_gate1(S0,I0,I1,Y);
+|
+halcheck: *N,PRTCNT (./mux_gate1_tb.v,18|0): Module/Entity 'mux_gate1' contains '4' ports.
+halcheck: (./mux_gate1_tb.v,18): Number of Input ports: 3.
+halcheck: (./mux_gate1_tb.v,18): Number of Output ports: 1.
+input S0,I0,I1;
+|
+halcheck: *N,DECLIN (./mux_gate1_tb.v,19|0): Use a separate line for each HDL declaration.
+input S0,I0,I1;
+|
+halcheck: *W,LCVARN (./mux_gate1_tb.v,19|0): Net name 'S0' uses uppercase characters.
+input S0,I0,I1;
+|
+halcheck: *W,LCVARN (./mux_gate1_tb.v,19|0): Net name 'I0' uses uppercase characters.
+input S0,I0,I1;
+|
+halcheck: *W,LCVARN (./mux_gate1_tb.v,19|0): Net name 'I1' uses uppercase characters.
+output Y;
+|
+halcheck: *W,LCVARN (./mux_gate1_tb.v,20|0): Net name 'Y' uses uppercase characters.
+halcheck: Total errors   = 0.
+halcheck: Total warnings = 18.
+
+  ==========================================================================
+Performing synthesizability checks 
+
+cfe64: 15.20.051-s(15.20.s051): (c) Copyright 1995 - 2018 Cadence Design Systems, Inc.
+cfe64 Build : Mon May  7 17:15:12 IST 2018 ldvopt246
+halsynth: Loading design snapshot....
+halsynth: Traversing design hierarchy....
+initial begin
+|
+halsynth: *W,INIUSP (./mux_gate1_tb.v,5|0): Module mux_gate1_tb has an initial block or a variable declaration assignment, which is ignored by synthesis tools.
+initial begin $monitor("time=%b,I0=%b,I1=%b, S0=%b,Y=%b",$time,I0,I1,S0,Y);
+|
+halsynth: *W,INIUSP (./mux_gate1_tb.v,13|0): Module mux_gate1_tb has an initial block or a variable declaration assignment, which is ignored by synthesis tools.
+halsynth: Total errors   = 0.
+halsynth: Total warnings = 2.
+
+  ==========================================================================
+Performing structural checks 
+
+halstruct(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+visadev(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+mux_gate1 DUT(.I0(I0),.I1(I1),.S0(S0),.Y(Y));
+|
+halstruct: *E,UNCONI (./mux_gate1_tb.v,4|0): Input port 'S0' of entity/module 'mux_gate1' is being used inside architecture/module, but not connected (either partially or completely) in its instance 'mux_gate1_tb.DUT'.
+halstruct: (./mux_gate1_tb.v,4): 'S0' mapped to actual expression 'S0' which is undriven.
+mux_gate1 DUT(.I0(I0),.I1(I1),.S0(S0),.Y(Y));
+|
+halstruct: *E,UNCONI (./mux_gate1_tb.v,4|0): Input port 'I0' of entity/module 'mux_gate1' is being used inside architecture/module, but not connected (either partially or completely) in its instance 'mux_gate1_tb.DUT'.
+halstruct: (./mux_gate1_tb.v,4): 'I0' mapped to actual expression 'I0' which is undriven.
+mux_gate1 DUT(.I0(I0),.I1(I1),.S0(S0),.Y(Y));
+|
+halstruct: *E,UNCONI (./mux_gate1_tb.v,4|0): Input port 'I1' of entity/module 'mux_gate1' is being used inside architecture/module, but not connected (either partially or completely) in its instance 'mux_gate1_tb.DUT'.
+halstruct: (./mux_gate1_tb.v,4): 'I1' mapped to actual expression 'I1' which is undriven.
+mux_gate1 DUT(.I0(I0),.I1(I1),.S0(S0),.Y(Y));
+|
+halstruct: *W,UNCONO (./mux_gate1_tb.v,4|0): Port 'Y' (which is being used as an output) of entity/module 'mux_gate1' is being driven inside the design, but not connected (either partially or completely) in its instance 'mux_gate1_tb.DUT'.
+assign Y=S0 ? I1:I0;
+|
+halstruct: *W,SYNPRT (./mux_gate1_tb.v,21|0): Output port 'Y' is assigned asynchronously.
+module mux_gate1_tb();
+|
+halstruct: *N,NUMDFF (./mux_gate1_tb.v,1|0): Number of single-bit D flip-flops present in the hierarchy is 0.
+halstruct: Design facts generated in 'hal.design_facts'.
+halstruct: Total errors   = 3.
+halstruct: Total warnings = 2.
+
+  ==========================================================================
+
+Analysis summary :
+
+ Errors   : (3)
+  UNCONI (3)     
+
+ Warnings : (22)
+  BADSYS (2)      DIFFMN (1)      INIUSP (2)      LCVARN (9)     
+  MULTMF (1)      NEEDIO (1)      NOBLKN (2)      SEPLIN (2)     
+  SYNPRT (1)      UNCONO (1)     
+
+ Notes    : (4)
+  DECLIN (1)      IDLENG (1)      NUMDFF (1)      PRTCNT (1)     
+
+Analysis complete.
+
+ ==========================================================================
+
+To analyze results, run following command :
+    ncbrowse -64bit -cdslib /home/adld15/241/mux/cds.lib -sortby severity -sortby category -sortby tag hal.log
+
