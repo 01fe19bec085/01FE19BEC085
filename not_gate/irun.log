@@ -1,0 +1,37 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Apr 04, 2022 at 17:51:16 IST
+irun
+	-access +rwc
+	notgate_tb.v
+file: notgate_tb.v
+	module worklib.tb:v
+		errors: 0, warnings: 0
+	module worklib.notgate:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.notgate:v <0x018e9788>
+			streams:   0, words:     0
+		worklib.tb:v <0x7b63ed93>
+			streams:   2, words:  1026
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           1       1
+		Scalar wires:        2       -
+		Initial blocks:      1       1
+		Cont. assignments:   0       1
+		Pseudo assignments:  1       1
+	Writing initial simulation snapshot: worklib.tb:v
+Loading snapshot worklib.tb:v .................... Done
+ncsim> source /cad_area/install/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+ncsim: *W,RNQUIE: Simulation is complete.
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Apr 04, 2022 at 17:51:17 IST  (total: 00:00:01)
