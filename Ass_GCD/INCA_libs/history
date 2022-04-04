@@ -1,0 +1,6 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(04Apr2022:16:19:32):( irun -access +rwc GCD_TB.v GCD.v )
+s2::(04Apr2022:16:26:48):( irun -access +rwc GCD.v GCD_TB.v )

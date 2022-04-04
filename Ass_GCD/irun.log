@@ -1,0 +1,81 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Apr 04, 2022 at 16:26:48 IST
+irun
+	-access +rwc
+	GCD.v
+	GCD_TB.v
+include ../../../cds.lib
+|
+irun: *W,DLCPTH (./INCA_libs/irun.lnx8664.15.20.nc/cdsrun.lib,1): cds.lib No such file '/home/adld25/01fe19bec096/cds.lib' (cds.lib command ignored).
+include ../../../hdl.var
+|
+irun: *W,DLHPTH (./INCA_libs/irun.lnx8664.15.20.nc/hdlrun.var,1): hdl.var invalid path '/home/adld25/01fe19bec096/Ass_GCD/INCA_libs/irun.lnx8664.15.20.nc/../../../hdl.var' (hdl.var command ignored).
+include ../../../cds.lib
+|
+irun: *W,DLCPTH (./INCA_libs/irun.lnx8664.15.20.nc/cdsrun.lib,1): cds.lib No such file '/home/adld25/01fe19bec096/cds.lib' (cds.lib command ignored).
+include ../../../hdl.var
+|
+irun: *W,DLHPTH (./INCA_libs/irun.lnx8664.15.20.nc/hdlrun.var,1): hdl.var invalid path '/home/adld25/01fe19bec096/Ass_GCD/INCA_libs/irun.lnx8664.15.20.nc/../../../hdl.var' (hdl.var command ignored).
+file: GCD.v
+	module worklib.GCD_datapath:v
+		errors: 0, warnings: 0
+	module worklib.PIPO:v
+		errors: 0, warnings: 0
+	module worklib.SUB:v
+		errors: 0, warnings: 0
+	module worklib.COMPARE:v
+		errors: 0, warnings: 0
+	module worklib.MUX:v
+		errors: 0, warnings: 0
+	module worklib.controller:v
+		errors: 0, warnings: 0
+file: GCD_TB.v
+	module worklib.GCD_test:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		GCD_test
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.COMPARE:v <0x0158a615>
+			streams:   1, words:   387
+		worklib.GCD_test:v <0x7c226c10>
+			streams:   8, words:  5481
+		worklib.MUX:v <0x2ccf3b13>
+			streams:   1, words:   208
+		worklib.PIPO:v <0x7bb7d9ff>
+			streams:   2, words:   432
+		worklib.SUB:v <0x300dd9a2>
+			streams:   1, words:   249
+		worklib.controller:v <0x268138e5>
+			streams:   3, words:  4372
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		              Instances  Unique
+		Modules:             10       7
+		Registers:           15      14
+		Scalar wires:        12       -
+		Vectored wires:       7       -
+		Always blocks:        6       5
+		Initial blocks:       3       3
+		Cont. assignments:    4       4
+		Pseudo assignments:   3       3
+	Writing initial simulation snapshot: worklib.GCD_test:v
+Loading snapshot worklib.GCD_test:v .................... Done
+ncsim> source /cad_area/install/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+                   0    x x
+                   5    x 0
+                  15  143 0
+                  45   65 0
+                  65   52 0
+                  75   39 0
+                  85   26 0
+                  95   13 0
+                  97   13 1
+Simulation complete via $finish(1) at time 1003 NS + 0
+./GCD_TB.v:12 #1000 $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Apr 04, 2022 at 16:26:51 IST  (total: 00:00:03)
