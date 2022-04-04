@@ -1,0 +1,191 @@
+hal(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+hal: Options:   -cdslib /home/adld15/241/nor_gate/cds.lib -logfile hal.log worklib.nor_gate_tb:module.
+hal: Snapshot:  worklib.nor_gate_tb:module.
+hal: Workspace: /home/adld15/241/nor_gate.
+hal: Date: Mon Apr 04 16:54:24 IST 2022.
+
+hal: Running on elaborated SNAPSHOT.....
+
+  ==========================================================================
+Performing lint checks 
+
+halcheck(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+visadev(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+module nor_gate_tb();
+|
+halcheck: *W,NEEDIO (./nor_gate_tb.v,1|0): Top-level module 'nor_gate_tb' has no inputs/outputs/inouts.
+initial begin
+|
+halcheck: *W,NOBLKN (./nor_gate_tb.v,5|0): Each block should be labeled with a meaningful name.
+$monitor("a=%b b=%b c=%b",a,b,c);
+|
+halcheck: *W,BADSYS (./nor_gate_tb.v,6|0): System task $monitor in module 'nor_gate_tb' is ignored.
+a=0;
+|
+halcheck: *W,IMPDTC (./nor_gate_tb.v,7|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit nor_gate_tb.
+a=0;
+|
+halcheck: *W,INTTOB (./nor_gate_tb.v,7|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit nor_gate_tb.
+a=0;
+|
+halcheck: *W,TRUNCZ (./nor_gate_tb.v,7|0): Truncation in constant conversion without a loss of bits in module/design-unit nor_gate_tb.
+b=0;
+|
+halcheck: *W,IMPDTC (./nor_gate_tb.v,8|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit nor_gate_tb.
+b=0;
+|
+halcheck: *W,INTTOB (./nor_gate_tb.v,8|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit nor_gate_tb.
+b=0;
+|
+halcheck: *W,TRUNCZ (./nor_gate_tb.v,8|0): Truncation in constant conversion without a loss of bits in module/design-unit nor_gate_tb.
+#10;
+|
+halcheck: *W,EMPSTM (./nor_gate_tb.v,9|0): Module 'nor_gate_tb' contains an empty statement.
+a=0;
+|
+halcheck: *W,IMPDTC (./nor_gate_tb.v,10|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit nor_gate_tb.
+a=0;
+|
+halcheck: *W,INTTOB (./nor_gate_tb.v,10|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit nor_gate_tb.
+a=0;
+|
+halcheck: *W,TRUNCZ (./nor_gate_tb.v,10|0): Truncation in constant conversion without a loss of bits in module/design-unit nor_gate_tb.
+b=1;
+|
+halcheck: *W,IMPDTC (./nor_gate_tb.v,11|0): Expression '1' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit nor_gate_tb.
+b=1;
+|
+halcheck: *W,INTTOB (./nor_gate_tb.v,11|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit nor_gate_tb.
+b=1;
+|
+halcheck: *W,TRUNCZ (./nor_gate_tb.v,11|0): Truncation in constant conversion without a loss of bits in module/design-unit nor_gate_tb.
+#10;
+|
+halcheck: *W,EMPSTM (./nor_gate_tb.v,12|0): Module 'nor_gate_tb' contains an empty statement.
+a=1;
+|
+halcheck: *W,IMPDTC (./nor_gate_tb.v,13|0): Expression '1' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit nor_gate_tb.
+a=1;
+|
+halcheck: *W,INTTOB (./nor_gate_tb.v,13|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit nor_gate_tb.
+a=1;
+|
+halcheck: *W,TRUNCZ (./nor_gate_tb.v,13|0): Truncation in constant conversion without a loss of bits in module/design-unit nor_gate_tb.
+b=0;
+|
+halcheck: *W,IMPDTC (./nor_gate_tb.v,14|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit nor_gate_tb.
+b=0;
+|
+halcheck: *W,INTTOB (./nor_gate_tb.v,14|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit nor_gate_tb.
+b=0;
+|
+halcheck: *W,TRUNCZ (./nor_gate_tb.v,14|0): Truncation in constant conversion without a loss of bits in module/design-unit nor_gate_tb.
+#10;
+|
+halcheck: *W,EMPSTM (./nor_gate_tb.v,15|0): Module 'nor_gate_tb' contains an empty statement.
+a=1;
+|
+halcheck: *W,IMPDTC (./nor_gate_tb.v,16|0): Expression '1' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit nor_gate_tb.
+a=1;
+|
+halcheck: *W,INTTOB (./nor_gate_tb.v,16|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit nor_gate_tb.
+a=1;
+|
+halcheck: *W,TRUNCZ (./nor_gate_tb.v,16|0): Truncation in constant conversion without a loss of bits in module/design-unit nor_gate_tb.
+b=1;
+|
+halcheck: *W,IMPDTC (./nor_gate_tb.v,17|0): Expression '1' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit nor_gate_tb.
+b=1;
+|
+halcheck: *W,INTTOB (./nor_gate_tb.v,17|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit nor_gate_tb.
+b=1;
+|
+halcheck: *W,TRUNCZ (./nor_gate_tb.v,17|0): Truncation in constant conversion without a loss of bits in module/design-unit nor_gate_tb.
+#10;
+|
+halcheck: *W,EMPSTM (./nor_gate_tb.v,18|0): Module 'nor_gate_tb' contains an empty statement.
+nor_gate DUT(.a(a), .b(b), .c(c));
+|
+halcheck: *W,LCVARN (./nor_gate_tb.v,4|0): Module instance name 'DUT' uses uppercase characters.
+nor_gate DUT(.a(a), .b(b), .c(c));
+|
+halcheck: *N,IDLENG (./nor_gate_tb.v,4|0): Identifier name 'DUT' is not of appropriate length (4 to 16 characters).
+module nor_gate(a,b,c);
+|
+halcheck: *W,DIFFMN (./nor_gate_tb.v,24|0): Module name 'nor_gate' differs from file name 'nor_gate_tb.v'.
+module nor_gate(a,b,c);
+|
+halcheck: *W,MULTMF (./nor_gate_tb.v,24|0): More than one design-unit definition in file 'nor_gate_tb.v'.
+module nor_gate(a,b,c);
+|
+halcheck: *N,PRTCNT (./nor_gate_tb.v,24|0): Module/Entity 'nor_gate' contains '3' ports.
+halcheck: (./nor_gate_tb.v,24): Number of Input ports: 2.
+halcheck: (./nor_gate_tb.v,24): Number of Output ports: 1.
+input a,b;
+|
+halcheck: *N,DECLIN (./nor_gate_tb.v,25|0): Use a separate line for each HDL declaration.
+halcheck: Total errors   = 0.
+halcheck: Total warnings = 34.
+
+  ==========================================================================
+Performing synthesizability checks 
+
+cfe64: 15.20.051-s(15.20.s051): (c) Copyright 1995 - 2018 Cadence Design Systems, Inc.
+cfe64 Build : Mon May  7 17:15:12 IST 2018 ldvopt246
+halsynth: Loading design snapshot....
+halsynth: Traversing design hierarchy....
+initial begin
+|
+halsynth: *W,INIUSP (./nor_gate_tb.v,5|0): Module nor_gate_tb has an initial block or a variable declaration assignment, which is ignored by synthesis tools.
+halsynth: Total errors   = 0.
+halsynth: Total warnings = 1.
+
+  ==========================================================================
+Performing structural checks 
+
+halstruct(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+visadev(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+nor_gate DUT(.a(a), .b(b), .c(c));
+|
+halstruct: *E,UNCONI (./nor_gate_tb.v,4|0): Input port 'a' of entity/module 'nor_gate' is being used inside architecture/module, but not connected (either partially or completely) in its instance 'nor_gate_tb.DUT'.
+halstruct: (./nor_gate_tb.v,4): 'a' mapped to actual expression 'a' which is undriven.
+nor_gate DUT(.a(a), .b(b), .c(c));
+|
+halstruct: *E,UNCONI (./nor_gate_tb.v,4|0): Input port 'b' of entity/module 'nor_gate' is being used inside architecture/module, but not connected (either partially or completely) in its instance 'nor_gate_tb.DUT'.
+halstruct: (./nor_gate_tb.v,4): 'b' mapped to actual expression 'b' which is undriven.
+nor_gate DUT(.a(a), .b(b), .c(c));
+|
+halstruct: *W,UNCONO (./nor_gate_tb.v,4|0): Port 'c' (which is being used as an output) of entity/module 'nor_gate' is being driven inside the design, but not connected (either partially or completely) in its instance 'nor_gate_tb.DUT'.
+assign c = !(a|b);
+|
+halstruct: *W,SYNPRT (./nor_gate_tb.v,27|0): Output port 'c' is assigned asynchronously.
+module nor_gate_tb();
+|
+halstruct: *N,NUMDFF (./nor_gate_tb.v,1|0): Number of single-bit D flip-flops present in the hierarchy is 0.
+halstruct: Design facts generated in 'hal.design_facts'.
+halstruct: Total errors   = 2.
+halstruct: Total warnings = 2.
+
+  ==========================================================================
+
+Analysis summary :
+
+ Errors   : (2)
+  UNCONI (2)     
+
+ Warnings : (37)
+  BADSYS (1)      DIFFMN (1)      EMPSTM (4)      IMPDTC (8)     
+  INIUSP (1)      INTTOB (8)      LCVARN (1)      MULTMF (1)     
+  NEEDIO (1)      NOBLKN (1)      SYNPRT (1)      TRUNCZ (8)     
+  UNCONO (1)     
+
+ Notes    : (4)
+  DECLIN (1)      IDLENG (1)      NUMDFF (1)      PRTCNT (1)     
+
+Analysis complete.
+
+ ==========================================================================
+
+To analyze results, run following command :
+    ncbrowse -64bit -cdslib /home/adld15/241/nor_gate/cds.lib -sortby severity -sortby category -sortby tag hal.log
+
