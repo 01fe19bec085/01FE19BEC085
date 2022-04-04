@@ -1,0 +1,4 @@
+ncsim(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+ncsim: *F,NOTSIM: The snaphot 'worklib.ripple_adder:v' is not simulatable.
+ncsim: Memory Usage - 38.6M program + 43.4M data = 82.1M total (82.5M Peak)
+ncsim: CPU Usage - 0.0s system + 0.0s user = 0.1s total (0.1s, 52.9% cpu)
