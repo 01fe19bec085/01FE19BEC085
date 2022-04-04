@@ -1,0 +1,16 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Apr 04, 2022 at 19:03:25 IST
+irun
+	-access +rwc
+	srff_tb.v
+file: srff_tb.v
+	module worklib.srff_tb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+srff dut(s,r,clk,q,qbar);
+       |
+ncelab: *E,CUVMUR (./srff_tb.v,4|7): instance 'srff_tb.dut' of design unit 'srff' is unresolved in 'worklib.srff_tb:v'.
+irun: *E,ELBERR: Error during elaboration (status 1), exiting.
+TOOL:	irun(64)	15.20-s051: Exiting on Apr 04, 2022 at 19:03:25 IST  (total: 00:00:00)
