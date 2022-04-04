@@ -1,0 +1,45 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Apr 04, 2022 at 17:05:01 IST
+irun
+	-access +rwc
+	decoder_tb.v
+file: decoder_tb.v
+	module worklib.decoder_tb:v
+		errors: 0, warnings: 0
+	module worklib.decoder:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		decoder_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.decoder:v <0x73eea77f>
+			streams:   1, words:  1305
+		worklib.decoder_tb:v <0x6fc1c07b>
+			streams:   3, words:  5102
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           2       2
+		Vectored wires:      2       -
+		Always blocks:       1       1
+		Initial blocks:      1       1
+		Pseudo assignments:  1       1
+	Writing initial simulation snapshot: worklib.decoder_tb:v
+Loading snapshot worklib.decoder_tb:v .................... Done
+ncsim> source /cad_area/install/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+                   0in=000 out=00000001
+                   5in=001 out=00000010
+                  10in=010 out=00000100
+                  15in=011 out=00001000
+                  20in=100 out=00010000
+                  25in=101 out=00100000
+                  30in=110 out=01000000
+                  35in=111 out=10000000
+ncsim: *W,RNQUIE: Simulation is complete.
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Apr 04, 2022 at 17:05:03 IST  (total: 00:00:02)
