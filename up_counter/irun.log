@@ -1,0 +1,27 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Apr 04, 2022 at 16:29:21 IST
+irun
+	-access +rwc
+	up_counter_tb.v
+file: up_counter_tb.v
+	module worklib.up_counter_tb:v
+		errors: 0, warnings: 0
+	module worklib.up_counter:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		up_counter_tb
+	Building instance overlay tables: ..........
+$monitor($time,"clk=%b reset=%b counter=%b");
+                                          |
+ncelab: *E,MISARG (./up_counter_tb.v,6|42): Argument for (%b) missing.
+$monitor($time,"clk=%b reset=%b counter=%b");
+                                          |
+ncelab: *E,MISARG (./up_counter_tb.v,6|42): Argument for (%b) missing.
+$monitor($time,"clk=%b reset=%b counter=%b");
+                                          |
+ncelab: *E,MISARG (./up_counter_tb.v,6|42): Argument for (%b) missing.
+.......... Done
+irun: *E,ELBERR: Error during elaboration (status 1), exiting.
+TOOL:	irun(64)	15.20-s051: Exiting on Apr 04, 2022 at 16:29:31 IST  (total: 00:00:10)
