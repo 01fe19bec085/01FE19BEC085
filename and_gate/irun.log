@@ -1,0 +1,42 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Apr 04, 2022 at 17:02:23 IST
+irun
+	-access +rwc
+	and_gate1_tb.v
+file: and_gate1_tb.v
+	module worklib.and_gate1_tb:v
+		errors: 0, warnings: 0
+	module worklib.and_gate1:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		and_gate1_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.and_gate1:v <0x3419d676>
+			streams:   0, words:     0
+		worklib.and_gate1_tb:v <0x71908dd3>
+			streams:   4, words:  5151
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           2       2
+		Scalar wires:        3       -
+		Initial blocks:      1       1
+		Cont. assignments:   0       1
+		Pseudo assignments:  2       2
+	Writing initial simulation snapshot: worklib.and_gate1_tb:v
+Loading snapshot worklib.and_gate1_tb:v .................... Done
+ncsim> source /cad_area/install/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+a=0 b=0 c=0
+a=0 b=1 c=0
+a=0 b=0 c=0
+a=1 b=0 c=0
+a=1 b=1 c=1
+ncsim: *W,RNQUIE: Simulation is complete.
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Apr 04, 2022 at 17:02:30 IST  (total: 00:00:07)
