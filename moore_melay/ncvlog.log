@@ -1,0 +1,49 @@
+ncvlog(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+always @(current)state,sequence_in)
+                      |
+ncvlog: *E,MISEXX (/home/adld15/241/moore_melay/moore_melay_test.v,48|22): expecting an '=' or '<=' sign in an assignment [9.2(IEEE)].
+always @(current)state,sequence_in)
+                                  |
+ncvlog: *E,MISEXX (/home/adld15/241/moore_melay/moore_melay_test.v,48|34): expecting an '=' or '<=' sign in an assignment [9.2(IEEE)].
+next_state=one;
+          |
+ncvlog: *E,EXPLPA (/home/adld15/241/moore_melay/moore_melay_test.v,53|10): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+next_state=one;
+              |
+ncvlog: *E,EXPLPA (/home/adld15/241/moore_melay/moore_melay_test.v,53|14): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+next_state=zero;
+          |
+ncvlog: *E,EXPLPA (/home/adld15/241/moore_melay/moore_melay_test.v,55|10): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+next_state=zero;
+               |
+ncvlog: *E,EXPLPA (/home/adld15/241/moore_melay/moore_melay_test.v,55|15): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+next_state=onezero;
+          |
+ncvlog: *E,EXPLPA (/home/adld15/241/moore_melay/moore_melay_test.v,59|10): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+next_state=onezero;
+                  |
+ncvlog: *E,EXPLPA (/home/adld15/241/moore_melay/moore_melay_test.v,59|18): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+next_state=one;
+          |
+ncvlog: *E,EXPLPA (/home/adld15/241/moore_melay/moore_melay_test.v,61|10): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+next_state=one;
+              |
+ncvlog: *E,EXPLPA (/home/adld15/241/moore_melay/moore_melay_test.v,61|14): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+next_state=zero;
+          |
+ncvlog: *E,EXPLPA (/home/adld15/241/moore_melay/moore_melay_test.v,65|10): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+next_state=zero;
+               |
+ncvlog: *E,EXPLPA (/home/adld15/241/moore_melay/moore_melay_test.v,65|15): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+next_state=onezeroone;
+          |
+ncvlog: *E,EXPLPA (/home/adld15/241/moore_melay/moore_melay_test.v,67|10): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+next_state=onezeroone;
+                     |
+ncvlog: *E,EXPLPA (/home/adld15/241/moore_melay/moore_melay_test.v,67|21): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+next_state=onezero;
+          |
+ncvlog: *E,EXPLPA (/home/adld15/241/moore_melay/moore_melay_test.v,71|10): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+ncvlog: *F,MAXERR: maximum error count reached (15).
+ncvlog: Memory Usage - 21.3M program + 28.4M data = 49.7M total
+ncvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.0s, 40.6% cpu)

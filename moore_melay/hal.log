@@ -1,0 +1,206 @@
+hal(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+hal: Options:   -cdslib /home/adld15/241/moore_melay/cds.lib -logfile hal.log worklib.moore_melay_test:module.
+hal: Snapshot:  worklib.moore_melay_test:module.
+hal: Workspace: /home/adld15/241/moore_melay.
+hal: Date: Mon Apr 04 18:22:23 IST 2022.
+
+hal: Running on elaborated SNAPSHOT.....
+
+  ==========================================================================
+Performing lint checks 
+
+halcheck(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+visadev(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+                                                                                                                                                                                                                                          
+|
+halcheck: *W,MAXLEN (./moore_melay_test.v,85|0): The HDL source line is 234 characters, which exceeds the recommended length of 80 characters.
+module moore_melay_test;
+|
+halcheck: *W,NEEDIO (./moore_melay_test.v,1|0): Top-level module 'moore_melay_test' has no inputs/outputs/inouts.
+initial begin
+|
+halcheck: *W,NOBLKN (./moore_melay_test.v,6|0): Each block should be labeled with a meaningful name.
+clock=0;
+|
+halcheck: *W,IMPDTC (./moore_melay_test.v,7|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit moore_melay_test.
+clock=0;
+|
+halcheck: *W,INTTOB (./moore_melay_test.v,7|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit moore_melay_test.
+clock=0;
+|
+halcheck: *W,TRUNCZ (./moore_melay_test.v,7|0): Truncation in constant conversion without a loss of bits in module/design-unit moore_melay_test.
+forever #5 clock=-clock;
+|
+halcheck: *W,SEPLIN (./moore_melay_test.v,8|0): Use a separate line for each HDL statement.
+forever #5 clock=-clock;
+|
+halcheck: *W,SGNUSG (./moore_melay_test.v,8|0): Negative value '-clock' assigned to an unsigned variable 'clock' in module/design-unit moore_melay_test.
+halcheck: (./moore_melay_test.v,8): LHS 'clock' (unsigned) - 1 bit(s), RHS '-clock' (signed) - 2 bit(s)..
+initial begin
+|
+halcheck: *W,NOBLKN (./moore_melay_test.v,10|0): Each block should be labeled with a meaningful name.
+sequence_in=0;
+|
+halcheck: *W,IMPDTC (./moore_melay_test.v,11|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit moore_melay_test.
+sequence_in=0;
+|
+halcheck: *W,INTTOB (./moore_melay_test.v,11|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit moore_melay_test.
+sequence_in=0;
+|
+halcheck: *W,TRUNCZ (./moore_melay_test.v,11|0): Truncation in constant conversion without a loss of bits in module/design-unit moore_melay_test.
+reset=1;
+|
+halcheck: *W,IMPDTC (./moore_melay_test.v,12|0): Expression '1' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit moore_melay_test.
+reset=1;
+|
+halcheck: *W,INTTOB (./moore_melay_test.v,12|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit moore_melay_test.
+reset=1;
+|
+halcheck: *W,TRUNCZ (./moore_melay_test.v,12|0): Truncation in constant conversion without a loss of bits in module/design-unit moore_melay_test.
+#30;
+|
+halcheck: *W,EMPSTM (./moore_melay_test.v,13|0): Module 'moore_melay_test' contains an empty statement.
+reset=0;
+|
+halcheck: *W,IMPDTC (./moore_melay_test.v,14|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit moore_melay_test.
+reset=0;
+|
+halcheck: *W,INTTOB (./moore_melay_test.v,14|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit moore_melay_test.
+reset=0;
+|
+halcheck: *W,TRUNCZ (./moore_melay_test.v,14|0): Truncation in constant conversion without a loss of bits in module/design-unit moore_melay_test.
+#40;
+|
+halcheck: *W,EMPSTM (./moore_melay_test.v,15|0): Module 'moore_melay_test' contains an empty statement.
+sequence_in=1;
+|
+halcheck: *W,IMPDTC (./moore_melay_test.v,16|0): Expression '1' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit moore_melay_test.
+sequence_in=1;
+|
+halcheck: *W,INTTOB (./moore_melay_test.v,16|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit moore_melay_test.
+sequence_in=1;
+|
+halcheck: *W,TRUNCZ (./moore_melay_test.v,16|0): Truncation in constant conversion without a loss of bits in module/design-unit moore_melay_test.
+#10;
+|
+halcheck: *W,EMPSTM (./moore_melay_test.v,17|0): Module 'moore_melay_test' contains an empty statement.
+sequence_in=0;
+|
+halcheck: *W,IMPDTC (./moore_melay_test.v,18|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit moore_melay_test.
+sequence_in=0;
+|
+halcheck: *W,INTTOB (./moore_melay_test.v,18|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit moore_melay_test.
+sequence_in=0;
+|
+halcheck: *W,TRUNCZ (./moore_melay_test.v,18|0): Truncation in constant conversion without a loss of bits in module/design-unit moore_melay_test.
+#10;
+|
+halcheck: *W,EMPSTM (./moore_melay_test.v,19|0): Module 'moore_melay_test' contains an empty statement.
+sequence_in=1;
+|
+halcheck: *W,IMPDTC (./moore_melay_test.v,20|0): Expression '1' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit moore_melay_test.
+sequence_in=1;
+|
+halcheck: *W,INTTOB (./moore_melay_test.v,20|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit moore_melay_test.
+sequence_in=1;
+|
+halcheck: *W,TRUNCZ (./moore_melay_test.v,20|0): Truncation in constant conversion without a loss of bits in module/design-unit moore_melay_test.
+#20;
+|
+halcheck: *W,EMPSTM (./moore_melay_test.v,21|0): Module 'moore_melay_test' contains an empty statement.
+sequence_in=0;
+|
+halcheck: *W,IMPDTC (./moore_melay_test.v,22|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit moore_melay_test.
+sequence_in=0;
+|
+halcheck: *W,INTTOB (./moore_melay_test.v,22|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit moore_melay_test.
+sequence_in=0;
+|
+halcheck: *W,TRUNCZ (./moore_melay_test.v,22|0): Truncation in constant conversion without a loss of bits in module/design-unit moore_melay_test.
+#20;
+|
+halcheck: *W,EMPSTM (./moore_melay_test.v,23|0): Module 'moore_melay_test' contains an empty statement.
+sequence_in=1;
+|
+halcheck: *W,IMPDTC (./moore_melay_test.v,24|0): Expression '1' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit moore_melay_test.
+sequence_in=1;
+|
+halcheck: *W,INTTOB (./moore_melay_test.v,24|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit moore_melay_test.
+sequence_in=1;
+|
+halcheck: *W,TRUNCZ (./moore_melay_test.v,24|0): Truncation in constant conversion without a loss of bits in module/design-unit moore_melay_test.
+#20;
+|
+halcheck: *W,EMPSTM (./moore_melay_test.v,25|0): Module 'moore_melay_test' contains an empty statement.
+sequence_in=0;
+|
+halcheck: *W,IMPDTC (./moore_melay_test.v,26|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit moore_melay_test.
+sequence_in=0;
+|
+halcheck: *W,INTTOB (./moore_melay_test.v,26|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit moore_melay_test.
+sequence_in=0;
+|
+halcheck: *W,TRUNCZ (./moore_melay_test.v,26|0): Truncation in constant conversion without a loss of bits in module/design-unit moore_melay_test.
+wire detector_out;
+|
+halcheck: *W,URAWIR (./moore_melay_test.v,5|0): Wire 'detector_out' defined in module 'moore_melay_test' is unused (neither read nor assigned).
+reg sequence_in;
+|
+halcheck: *W,URDREG (./moore_melay_test.v,2|0): Local register variable 'sequence_in' is not read, but is assigned at least once in module 'moore_melay_test'.
+reg reset;
+|
+halcheck: *W,URDREG (./moore_melay_test.v,4|0): Local register variable 'reset' is not read, but is assigned at least once in module 'moore_melay_test'.
+halcheck: Total errors   = 0.
+halcheck: Total warnings = 46.
+
+  ==========================================================================
+Performing synthesizability checks 
+
+cfe64: 15.20.051-s(15.20.s051): (c) Copyright 1995 - 2018 Cadence Design Systems, Inc.
+cfe64 Build : Mon May  7 17:15:12 IST 2018 ldvopt246
+halsynth: Loading design snapshot....
+halsynth: Traversing design hierarchy....
+initial begin
+|
+halsynth: *W,INIUSP (./moore_melay_test.v,6|0): Module moore_melay_test has an initial block or a variable declaration assignment, which is ignored by synthesis tools.
+initial begin
+|
+halsynth: *W,INIUSP (./moore_melay_test.v,10|0): Module moore_melay_test has an initial block or a variable declaration assignment, which is ignored by synthesis tools.
+module moore_melay_test;
+|
+halsynth: *W,EMPMOD (./moore_melay_test.v,1|0): Module/Design-unit 'moore_melay_test' is empty.
+halsynth: Total errors   = 0.
+halsynth: Total warnings = 3.
+
+  ==========================================================================
+Performing structural checks 
+
+halstruct(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+visadev(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+module moore_melay_test;
+|
+halstruct: *N,NUMDFF (./moore_melay_test.v,1|0): Number of single-bit D flip-flops present in the hierarchy is 0.
+halstruct: Design facts generated in 'hal.design_facts'.
+halstruct: Total errors   = 0.
+halstruct: Total warnings = 0.
+
+  ==========================================================================
+
+Analysis summary :
+
+ Warnings : (49)
+  EMPMOD (1)      EMPSTM (7)      IMPDTC (10)     INIUSP (2)     
+  INTTOB (10)     MAXLEN (1)      NEEDIO (1)      NOBLKN (2)     
+  SEPLIN (1)      SGNUSG (1)      TRUNCZ (10)     URAWIR (1)     
+  URDREG (2)     
+
+ Notes    : (1)
+  NUMDFF (1)     
+
+Analysis complete.
+
+ ==========================================================================
+
+To analyze results, run following command :
+    ncbrowse -64bit -cdslib /home/adld15/241/moore_melay/cds.lib -sortby severity -sortby category -sortby tag hal.log
+

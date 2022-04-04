@@ -1,0 +1,14 @@
+ncsim(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm moore_melay_test.clock moore_melay_test.detector_out moore_melay_test.reset moore_melay_test.sequence_in
+Created probe 1
+ncsim> run
+Simulation interrupted at 1502275190 NS + 0
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 179.6M data = 218.2M total (221.8M Peak)
+ncsim: CPU Usage - 0.5s system + 7.6s user = 8.1s total (47.0s, 17.2% cpu)
