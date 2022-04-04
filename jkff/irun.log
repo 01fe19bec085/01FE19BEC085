@@ -1,0 +1,54 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Apr 04, 2022 at 17:13:22 IST
+irun
+	-access +rwc
+	jkff_tb.v
+file: jkff_tb.v
+	module worklib.jkff_tb:v
+		errors: 0, warnings: 0
+	module worklib.jkff:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		jkff_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.jkff:v <0x3cf68263>
+			streams:   3, words:   917
+		worklib.jkff_tb:v <0x631b62a7>
+			streams:  11, words:  6732
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           5       5
+		Scalar wires:        6       -
+		Always blocks:       2       2
+		Initial blocks:      5       5
+		Cont. assignments:   1       1
+		Pseudo assignments:  4       4
+	Writing initial simulation snapshot: worklib.jkff_tb:v
+Loading snapshot worklib.jkff_tb:v .................... Done
+ncsim> source /cad_area/install/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+                   0j=1 k=1 q=x qnot=x
+                   1j=1 k=1 q=0 qnot=1
+                   5j=1 k=1 q=1 qnot=0
+                   7j=1 k=1 q=0 qnot=1
+                   9j=1 k=1 q=1 qnot=0
+                  11j=1 k=1 q=0 qnot=1
+                  13j=1 k=1 q=1 qnot=0
+                  15j=1 k=1 q=0 qnot=1
+                  17j=1 k=1 q=1 qnot=0
+                  19j=1 k=1 q=0 qnot=1
+                  21j=1 k=1 q=1 qnot=0
+                  23j=1 k=1 q=0 qnot=1
+                  25j=1 k=1 q=1 qnot=0
+                  27j=1 k=1 q=0 qnot=1
+                  29j=1 k=1 q=1 qnot=0
+Simulation complete via $finish(1) at time 30 NS + 0
+./jkff_tb.v:13 #25 $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Apr 04, 2022 at 17:13:23 IST  (total: 00:00:01)
