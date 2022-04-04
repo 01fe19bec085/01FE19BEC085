@@ -1,0 +1,14 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-c
+-q
+-nostdout
+-access
++rwc
+-ncelabargs
+-partialdesign
+-log
+./.hal-irun.log
+/home/adld15/241/ripple_adder/ripple_carry_adder_tb.v

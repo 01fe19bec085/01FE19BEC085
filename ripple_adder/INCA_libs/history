@@ -1,0 +1,10 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(04Apr2022:16:36:10):( irun -access +rwc ripple_adder_tb.v )
+s2::(04Apr2022:16:38:50):( irun -access +rwc ripple_carry_adder_tb.v )
+s3::(04Apr2022:16:38:58):( irun -access +rwc ripple_carry_adder_tb.v )
+s4::(04Apr2022:17:31:00):( irun -access +rwc ripple_carry_adder_tb.v )
+s5::(04Apr2022:17:32:14):( irun -c -q -nostdout -access +rwc -ncelabargs -partialdesign -log ./.hal-irun.log /home/adld15/241/ripple_adder/ripple_carry_adder.v )
+s6::(04Apr2022:17:32:22):( irun -c -q -nostdout -access +rwc -ncelabargs -partialdesign -log ./.hal-irun.log /home/adld15/241/ripple_adder/ripple_carry_adder_tb.v )

@@ -1,0 +1,41 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Apr 04, 2022 at 17:31:00 IST
+irun
+	-access +rwc
+	ripple_carry_adder_tb.v
+Recompiling... reason: unable to stat '/./home/adld15/241/tit_tac_tb.v'.
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+	Top level design units:
+		ripple_adder_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.full_adder:v <0x745c419a>
+			streams:   0, words:     0
+		worklib.ripple_adder:v <0x1cb56bec>
+			streams:   1, words:   146
+		worklib.ripple_adder_tb:v <0x42f94c13>
+			streams:   4, words:  5945
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             6       3
+		Registers:           2       2
+		Scalar wires:        9       -
+		Expanded wires:      8       2
+		Initial blocks:      1       1
+		Cont. assignments:   0       2
+		Pseudo assignments:  3       3
+	Writing initial simulation snapshot: worklib.ripple_adder_tb:v
+Loading snapshot worklib.ripple_adder_tb:v .................... Done
+ncsim> source /cad_area/install/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+                   0a=0000 b=0000 sum=0000 cout=0
+                  10a=1100 b=0100 sum=0000 cout=1
+                  20a=1000 b=0010 sum=1010 cout=0
+                  30a=1001 b=0110 sum=1111 cout=0
+ncsim: *W,RNQUIE: Simulation is complete.
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Apr 04, 2022 at 17:31:01 IST  (total: 00:00:01)
